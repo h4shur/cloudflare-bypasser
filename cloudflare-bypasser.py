@@ -576,11 +576,11 @@ def cloudflare():
         print("######      h4shursec@gmail.com      ######")
         print("###########################################")
         print("")
-        url = input("[+] Please Enter Your Target domain:")
+        url = input("[+] Please Enter Your domain:")
 
         if url == "":
             try:
-                print("Please enter domain :( ")
+                print("Please enter domain. ")
                 sys.exit()
             except:
                 return
@@ -588,11 +588,11 @@ def cloudflare():
             try:
                 http = str(sub) + "." + str(url)
                 bypass = socket.gethostbyname(str(http))
-                print(" [!] cloudflare bypass: " + str(bypass) + ' | ' + str(http))
+                print(" [!] cloudflare bypass : " + str(bypass) + ' | ' + str(http))
             except:
                 pass
         try:
-            input(' [*] back to menu (press enter...)')
+            input(' [+] back to menu (press enter...)')
         except:
             print("")
             sys.exit()
